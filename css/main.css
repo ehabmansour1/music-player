@@ -1,0 +1,222 @@
+/* start variables */
+:root {
+  --main-color: ;
+}
+/* end variables */
+
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* End Global Rules */
+
+main {
+  background: linear-gradient(178.93deg, #720338 0.92%, #040303 111.3%);
+  border-radius: 8px;
+  width: 428px;
+  max-width: 100%;
+  margin: 10px auto;
+  height: calc(100vh - 20px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-height: 965px;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+@media (max-width: 400px) {
+  main {
+    margin: 0px auto;
+    height: 100vh;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
+}
+
+/* start header  */
+.header {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.header i {
+  font-size: 22px;
+  cursor: pointer;
+}
+.header p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* end header  */
+/* start image  */
+.image {
+  padding: 30px;
+  border: 1px solid white;
+  margin: 30px 0;
+}
+img {
+  max-width: 100%;
+  user-select: none;
+}
+@media (min-width: 400px) {
+  .image {
+    padding: 0px;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    max-width: 60%;
+    user-select: none;
+    margin: auto;
+    display: block;
+  }
+}
+/* end image  */
+/* start info  */
+.info {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .text p:first-child {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.05em;
+  margin-bottom: 5px;
+}
+.info .text p:last-child {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.05em;
+  color: #bfb8b2;
+}
+.info i {
+  font-size: 22px;
+  cursor: pointer;
+}
+/* end info  */
+/* start progress  */
+
+.progress-holder {
+  height: 4px;
+  width: 100%;
+  background-color: #d9d9d973;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  margin: 1px 0;
+}
+.progress-holder:hover {
+  height: 6px;
+  margin: 0 0;
+}
+.progress {
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: white;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  position: relative;
+}
+.progress::before {
+  position: absolute;
+  content: "";
+  right: -7px;
+  height: 6px;
+  background-color: rgb(255, 255, 255);
+  width: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  top: -1px;
+}
+.progress-holder:hover .progress::before {
+  height: 8px;
+}
+/* end progress  */
+/* start controls */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+.controls i {
+  cursor: pointer;
+}
+.controls i:first-child,
+.controls i:last-child {
+  font-size: 23px;
+}
+.controls .imp {
+  font-size: 30px;
+}
+.controls .fa-circle-pause,
+.controls .fa-circle-play {
+  font-size: 55px;
+}
+.footer {
+  display: flex;
+  color: #d9d9d9;
+  justify-content: space-between;
+}
+.footer i {
+  cursor: pointer;
+}
+/* end controls */
